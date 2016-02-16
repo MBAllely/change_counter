@@ -19,19 +19,6 @@
             $this->assertEquals("beard", $result);
         }
 
-        function test_anagram_multipleWords()
-        {
-            //Arrange
-            $test_Anagram = new Anagram;
-            $input = "bread";
-            $wordsinput = "beard, bared, potato";
-
-            //Act
-            $result = $test_Anagram->anagramSort($input, $wordsinput);
-
-            //Assert
-            $this->assertEquals("beard, bared", $result);
-        }
     }
 
 ?>

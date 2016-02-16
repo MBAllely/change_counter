@@ -1,6 +1,6 @@
 <?php
     require_once __DIR__."/../vendor/autoload.php";
-    require_once __DIR__."/../src/Anagram.php";
+    require_once __DIR__."/../src/Coins.php";
 
     $app = new Silex\Application();
 
@@ -13,8 +13,8 @@
     });
 
     $app->get('/results', function() use ($app) {
-        $anagram = new Anagram();
-        $result = $anagram->anagramSort($_GET['input'], $_GET['compare_input']);
+        $change = new Coins();
+        $result = $change->anagramSort($_GET['input']);
         return $app['twig']->render('results.html.twig', array('answer' => $result));
     });
 

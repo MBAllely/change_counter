@@ -20,7 +20,11 @@
                 $input -= 5;
                 $nickels += 1;
             }
-            return "quarters:" . $quarters . " dimes:" . $dimes . " nickels:" . $nickels;
+            while ($input >= 1) {
+                $input -= 1;
+                $pennies += 1;
+            }
+            return "quarters:" . $quarters . " dimes:" . $dimes . " nickels:" . $nickels . " pennies:" . $pennies;
 
 
         }

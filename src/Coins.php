@@ -24,7 +24,7 @@
                 $input -= 1;
                 $pennies += 1;
             }
-            return "quarters:" . $quarters . " dimes:" . $dimes . " nickels:" . $nickels . " pennies:" . $pennies;
+            return "quarters:" . $quarters . " \ndimes:" . $dimes . " \nnickels:" . $nickels . " \npennies:" . $pennies;
 
 
         }

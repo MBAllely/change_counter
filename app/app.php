@@ -14,7 +14,7 @@
 
     $app->get('/results', function() use ($app) {
         $change = new Coins();
-        $result = $change->anagramSort($_GET['input']);
+        $result = $change->coinSort($_GET['input']);
         return $app['twig']->render('results.html.twig', array('answer' => $result));
     });
 

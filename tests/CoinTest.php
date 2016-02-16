@@ -28,7 +28,7 @@
             $result = $test_Coin->coinSort($input);
 
             //Assert
-            $this->assertEquals("quarters:0 dimes:1 nickels:1 pennies:0", $result);
+            $this->assertEquals("quarters:0 \ndimes:1 \nnickels:1 \npennies:0", $result);
         }
 
         function test_coins_nickels()
